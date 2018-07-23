@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_pading_10"
+        android:background="@drawable/shape_tvjieshao_bg"
+        android:text="@string/tv_setting"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_pading_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备信息:" />
+
+        <TextView
+            android:id="@+id/tv_device_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_pading_10"
+            android:text="null"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <View style="@style/fengeline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_pading_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否支持当前设备:" />
+
+        <TextView
+            android:id="@+id/tv_zcdevice_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_pading_10"
+            android:text="很抱歉啦,暂不支持"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <View style="@style/fengeline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_pading_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_pading_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前是否已经获取root权限:" />
+
+        <TextView
+            android:id="@+id/tv_root_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_pading_10"
+            android:text="false"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <View style="@style/fengeline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_pading_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前模拟触摸文件是否获取读写权限:" />
+
+        <TextView
+            android:id="@+id/tv_moniclick_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_pading_10"
+            android:text="false"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <View style="@style/fengeline" />
+
+    <Button
+        android:id="@+id/btn_getmoniclick_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonview_height"
+        android:layout_marginLeft="@dimen/margin_pading_10"
+        android:layout_marginRight="@dimen/margin_pading_10"
+        android:layout_marginTop="@dimen/margin_pading_20"
+        android:background="@drawable/bg_button"
+        android:text="获取root权限和event读写权限"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <!-- 想用getevent获取触摸事件的event文件名 ， 可惜行不通-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_pading_10"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_pading_10"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="getevent输出:" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_event_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_pading_10"
+                android:text="null"
+                android:textColor="@android:color/darker_gray" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_getevent_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonview_height"
+        android:layout_marginBottom="@dimen/margin_pading_10"
+        android:layout_marginLeft="@dimen/margin_pading_10"
+        android:layout_marginRight="@dimen/margin_pading_10"
+        android:layout_marginTop="@dimen/margin_pading_10"
+        android:background="@drawable/bg_button"
+        android:text="尝试获取触屏设备文件"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone" />
+
+</LinearLayout>

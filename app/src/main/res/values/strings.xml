@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQ加群机器人</string>
+    <string name="action_setting">设置</string>
+    <string name="action_help">使用帮助</string>
+    <string name="action_about">关于</string>
+    <string name="action_log">服务监控</string>
+    
+    <string name="tv_jieshao">注意：本产品只适用于加群营销，请忽用于任何违法用途，违者后果自负！ 如需自动打开QQ登录请输入用户名和密码，不做任何保存，请放心使用!</string>
+    <string name="tv_setting">注意：本产品只支持已root的设备，且只支持4.4到6.0的android设备!</string>
+
+    <string name="et_username">QQ用户名,非必填</string>
+    <string name="et_password">QQ登录密码,非必填</string>
+    
+    <string name="et_joingroup_keyword">加群关键词|群号码</string>
+    <string name="et_joingroup_myinfo">申请加群的个人介绍</string>
+    <string name="et_joingroup_evernumber">每个关键词最多加群数量</string>
+    <string name="et_joingroup_minnumber">群人数需大于多少</string>
+    <string name="check_join_hygroup">只加活跃群</string>
+    
+    <string name="btn_start_server">开始服务</string>
+    <string name="btn_stop_server">停止服务</string>
+    
+    <string name="tv_msg">日记：</string>
+    
+    <string name="tv_vericsion_info">个人开发者：www.wujiuye.com 版本号：1.0.0</string>
+    
+    <string name="help_info_0">使用须知：qq用户名和密码不是必填项，如需使用自动登录QQ功能需要输入正确的用户名和密码，如密码出错会自动取消登录功能，需要手动登录。</string>
+    <string name="help_info_1">步骤一：输入加群关键词或直接输入群号码，多个关键词用|隔开。</string>
+    <string name="help_info_2">步骤二：填写加群个人介绍，在加群的时候会自动填上。</string>
+    <string name="help_info_3">步骤三：设置每个关键词搜索出来的群，最多加多少个。如果关键词是群号，也就是精确搜索，那么该字段不起作用。</string>
+    <string name="help_info_4">步骤四：设置群人数最低下限，也就是只加总人数大于多少的群。</string>
+    <string name="help_info_5">步骤五：设置是否只加活跃群，该步骤可跳过。</string>
+    <string name="help_info_6">步骤六：点击开始服务按钮，机器人自动帮你加群，可随时点击停止。</string>
+    
+    <string name="help_info_zhuyi">注意事项：在服务器开启过程中，请不要操作手机。</string>
+    <string name="help_info_jinayi">使用建议：建议使用模拟器进行操作，以免接听电话被打断。</string>
+    
+    <string name="serverinfo">QQ加群机器人-后台服务</string>
+
+</resources>

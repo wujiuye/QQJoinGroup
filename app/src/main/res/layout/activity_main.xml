@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_pading_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_pading_10"
+                        android:background="@drawable/shape_tvjieshao_bg"
+                        android:text="@string/tv_jieshao"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="@dimen/text_size_14" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_pading_20"
+                        android:orientation="vertical">
+
+                        <View style="@style/fengeline" />
+
+                        <EditText
+                            android:id="@+id/etQQUsername"
+                            style="@style/editview"
+                            android:hint="@string/et_username" />
+
+                        <View style="@style/fengeline" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etQQPassword"
+                            style="@style/editview"
+                            android:hint="@string/et_password" />
+
+                        <View style="@style/fengeline" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_pading_20"
+                        android:orientation="vertical">
+
+                        <View style="@style/fengeline" />
+
+                        <EditText
+                            android:id="@+id/etJoinGroupKeyword"
+                            style="@style/editview"
+                            android:hint="@string/et_joingroup_keyword" />
+
+                        <View style="@style/fengeline" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etJoinGroupMyDesc"
+                            style="@style/editview"
+                            android:hint="@string/et_joingroup_myinfo" />
+
+                        <View style="@style/fengeline" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etKeywordJoinGroupCount"
+                            style="@style/editview"
+                            android:hint="@string/et_joingroup_evernumber" />
+
+                        <View style="@style/fengeline" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etGroupNumberMinPeople"
+                            style="@style/editview"
+                            android:hint="@string/et_joingroup_minnumber" />
+
+                        <View style="@style/fengeline" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnStartService"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonview_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_button"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/btn_start_server"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+</LinearLayout>

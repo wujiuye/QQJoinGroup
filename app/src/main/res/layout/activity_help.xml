@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <include layout="@layout/common_title_bar"/>
+
+    <TextView
+        style="@style/textview"
+        android:layout_marginTop="@dimen/margin_pading_20"
+        android:text="@string/help_info_0"/>
+   
+
+    <TextView
+        style="@style/textview"
+        android:layout_marginTop="@dimen/margin_pading_20"
+        android:text="@string/help_info_1" />
+
+    <View style="@style/fengeline" />
+
+    <TextView
+        style="@style/textview"
+        android:text="@string/help_info_2" />
+
+    <View style="@style/fengeline" />
+
+    <TextView
+        style="@style/textview"
+        android:text="@string/help_info_3" />
+
+    <View style="@style/fengeline" />
+
+    <TextView
+        style="@style/textview"
+        android:text="@string/help_info_4" />
+
+    <View style="@style/fengeline" />
+
+    <TextView
+        style="@style/textview"
+        android:text="@string/help_info_5" />
+
+    <View style="@style/fengeline" />
+
+    <TextView
+        style="@style/textview"
+        android:text="@string/help_info_6" />
+
+    <View style="@style/fengeline" />
+
+    <TextView
+        style="@style/textview"
+        android:layout_marginTop="@dimen/margin_pading_20"
+        android:text="@string/help_info_zhuyi" />
+
+    <View style="@style/fengeline" />
+
+    <TextView
+        style="@style/textview"
+        android:text="@string/help_info_jinayi" />
+
+    <View style="@style/fengeline" />
+
+</LinearLayout>

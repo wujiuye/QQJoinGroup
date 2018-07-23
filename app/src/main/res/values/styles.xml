@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- app主题基样式 -->
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+
+    <!-- app主题样式 -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:popupMenuStyle">@style/AppPopupMenu</item>
+        <!-- activity的进出动画 -->
+        <item name="android:windowAnimationStyle">@style/Animation_Activity_RightInRightOut</item>
+    </style>
+
+    <!-- 右进右出动画 -->
+    <style name="Animation_Activity_RightInRightOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="title_bar_style">
+        <item name="android:background">@drawable/bg_titlebar</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_bar_height</item>
+    </style>
+
+    <style name="AppPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/year_bg</item>
+    </style>
+
+    <style name="fengeline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/editview_b</item>
+    </style>
+    
+    <style name="editview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/editview_height</item>
+        <item name="android:background">@drawable/shape_editview_bg</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+    
+    <style name="textview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/editview_height</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/blak</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/margin_pading_10</item>
+        <item name="android:paddingRight">@dimen/margin_pading_10</item>
+    </style>
+
+</resources>

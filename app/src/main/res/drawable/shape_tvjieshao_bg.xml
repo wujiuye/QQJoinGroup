@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <solid android:color="@android:color/transparent"/>
+    
+    <corners android:radius="@dimen/margin_pading_5"/>
+    
+    <padding
+        android:left="@dimen/margin_pading_10"
+        android:right="@dimen/margin_pading_10"
+        android:top="@dimen/margin_pading_10"
+        android:bottom="@dimen/margin_pading_10"/>
+    
+    <stroke android:width="1px"
+        android:color="@color/editview_b"
+        android:dashWidth="2px"
+        android:dashGap="2px"/>
+
+</shape>
